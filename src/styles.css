@@ -5,6 +5,8 @@ body, html {
     padding: 0;
     min-height: 100vh;
     width: 100vw;
+    font-family: "Montserrat", cursive, sans sersif;
+    background-color: #f3f4f6 ;
   }
 
 .nav-bar {
@@ -17,17 +19,20 @@ body, html {
     padding-right: 20px;
     position: fixed;
     width: 100%;
-    font-family: "Montserrat", cursive;
     opacity: 0.9;
-    box-shadow: 40px;
+    -webkit-box-shadow: 0 4px 4px -6px;
+    -moz-box-shadow: 0 4px 4px -6px;
+    box-shadow: 0 4px 4px -6px;
 }
+
 .name {
-    padding-right: 72em;
+    margin-right: 25%;
     font-size: 20px;
+    align-self: center;
+    justify-self: center;
 }
 
 button {
-    font-family: "Montserrat", cursive;
     font-size: 16px;
     height: 40px;
     width: 80px;
@@ -36,19 +41,16 @@ button {
     border-radius: 20px;
     cursor: pointer;
     margin-right: 20px;
-    color:brown;
+    color:rgb(207, 9, 9);
 
 }
 button:hover {
     color:black;
-    border-bottom: 1px brown;
     text-decoration: underline;
 }
 
 #content {
     display: flex;
-    background-color: #f3f4f6 ;
-    height: 100%;
     width: 100%;
     flex-direction: column;
     align-items: center;
@@ -68,7 +70,6 @@ button:hover {
     margin-top: 3rem;
     color: black;
     font-size: 28px;
-    font-family: "Montserrat", cursive;
     text-align: center;
     font-style: italic;
 }
@@ -78,20 +79,11 @@ button:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(4, 1fr);
-    height: 80rem;
+    height: 100rem;
     width: 62%;
     gap: 30px;
 }
 
-.grid-container > * {
-    border: 2px solid black;
-}
-
-.grid-child2 > img {
-    object-fit: cover;
-    max-height: 100%;
-    width: 100%;
-}
 
 .grid-child1 {
     margin-left: 4rem;
@@ -102,7 +94,7 @@ button:hover {
     align-self: center;
 }
 
-.gridchild3 > img {
+img {
     object-fit: cover;
     max-height: 100%;
     width: 100%;
@@ -116,3 +108,22 @@ button:hover {
     text-align: center;
     align-self: center;
 }
+
+.grid-child5 {
+    margin-left: 5rem;
+    width: 70%;
+    font-size: 24px;
+    line-height: 1.6;
+    text-align: center;
+    align-self: center;
+}
+
+.grid-child8 {
+    margin-left: 5rem;
+    width: 70%;
+    font-size: 24px;
+    line-height: 1.6;
+    text-align: center;
+    align-self: center;
+}
+
