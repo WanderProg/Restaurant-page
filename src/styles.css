@@ -3,7 +3,7 @@
 body, html {
     margin: 0;
     padding: 0;
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
   }
 
@@ -12,16 +12,17 @@ body, html {
     display: flex;
     justify-content: flex-end;
     gap: 15px;
-    height: 8rem;
+    height: 6rem;
     align-items: center;
     padding-right: 20px;
     position: fixed;
     width: 100%;
     font-family: "Montserrat", cursive;
-    border-bottom: 2px solid black;
+    opacity: 0.9;
+    box-shadow: 40px;
 }
 .name {
-    padding-right: 75em;
+    padding-right: 72em;
     font-size: 20px;
 }
 
@@ -39,16 +40,79 @@ button {
 
 }
 button:hover {
-    background-color: rgb(236, 234, 234);
-    color:white
+    color:black;
+    border-bottom: 1px brown;
+    text-decoration: underline;
 }
 
 #content {
     display: flex;
-    background-color: lightgray ;
+    background-color: #f3f4f6 ;
     height: 100%;
     width: 100%;
+    flex-direction: column;
+    align-items: center;
 }
+
 .imagecontainer {
-    background-image: url(../images/fish-restaurant.webp);
+    margin-top: 120px;
+    background-image: url(../images/cooking-fish.jpg);
+    background-repeat: none;
+    width: 1250px;
+    height: 750px;
+    border-radius: 8px;
+}
+
+.award {
+    line-height: 1.6;
+    margin-top: 3rem;
+    color: black;
+    font-size: 28px;
+    font-family: "Montserrat", cursive;
+    text-align: center;
+    font-style: italic;
+}
+
+.grid-container {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    height: 80rem;
+    width: 62%;
+    gap: 30px;
+}
+
+.grid-container > * {
+    border: 2px solid black;
+}
+
+.grid-child2 > img {
+    object-fit: cover;
+    max-height: 100%;
+    width: 100%;
+}
+
+.grid-child1 {
+    margin-left: 4rem;
+    width: 70%;
+    font-size: 24px;
+    line-height: 1.6;
+    text-align: center;
+    align-self: center;
+}
+
+.gridchild3 > img {
+    object-fit: cover;
+    max-height: 100%;
+    width: 100%;
+}
+
+.grid-child4 {
+    margin-left: 5rem;
+    width: 70%;
+    font-size: 24px;
+    line-height: 1.6;
+    text-align: center;
+    align-self: center;
 }
