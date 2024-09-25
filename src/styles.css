@@ -1,6 +1,54 @@
-/* styles.css */
-body {
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body, html {
     margin: 0;
     padding: 0;
-    background-color: rgb(8, 69, 203);
+    height: 100vh;
+    width: 100vw;
   }
+
+.nav-bar {
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    height: 8rem;
+    align-items: center;
+    padding-right: 20px;
+    position: fixed;
+    width: 100%;
+    font-family: "Montserrat", cursive;
+    border-bottom: 2px solid black;
+}
+.name {
+    padding-right: 75em;
+    font-size: 20px;
+}
+
+button {
+    font-family: "Montserrat", cursive;
+    font-size: 16px;
+    height: 40px;
+    width: 80px;
+    border: none;
+    background-color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-right: 20px;
+    color:brown;
+
+}
+button:hover {
+    background-color: rgb(236, 234, 234);
+    color:white
+}
+
+#content {
+    display: flex;
+    background-color: lightgray ;
+    height: 100%;
+    width: 100%;
+}
+.imagecontainer {
+    background-image: url(../images/fish-restaurant.webp);
+}
