@@ -94,10 +94,35 @@ button:hover {
     align-self: center;
 }
 
+.grid-child2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
 img {
     object-fit: cover;
     max-height: 100%;
     width: 100%;
+    border-radius: 4px;
+}
+
+.image1 {
+
+    background-image: url(../images/Pepijn-Fleur-2.webp);
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.image2 {
+
+    background-image: url(../images/seafoodbar.webp);
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
 }
 
 .grid-child4 {
@@ -127,3 +152,35 @@ img {
     align-self: center;
 }
 
+.quote-bar-one {
+    display: flex;
+    height: 15rem;
+    width: 100%;
+    background-color: white;
+    margin-top: 12rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+.quote-title {
+    color: rgb(163, 43, 43);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.quote-text {
+
+    font-style: italic;
+}
+
+.quote-bar-two {
+    display: flex;
+    height: 15rem;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
