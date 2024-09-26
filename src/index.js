@@ -1,9 +1,16 @@
 import "./styles.css";
-import { greeting } from "./greeting.js";
 import { loadHome } from "./home.js";
+import { loadMenu } from "./menu.js";
 
-console.log(greeting)
 
-const homeButton = document.querySelector(".home")
+
+ const homeButton = document.querySelector(".home")
+const menuButton = document.querySelector(".menu")
 
 homeButton.addEventListener("click", loadHome)
+menuButton.addEventListener("click", loadMenu)
+
+
+loadHome()
+
+
