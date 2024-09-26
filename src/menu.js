@@ -1,6 +1,5 @@
 export function loadMenu() {
     const content = document.querySelector("#content")
-    content.textContent = ""
 
     const menuContainer = document.createElement("div")
     menuContainer.classList.add("menu-container")
@@ -34,21 +33,22 @@ export function loadMenu() {
     textMenu.textContent = "Download Menu"
     menuNavBar.append(textMenu)
 
+    const buttonContainer = document.createElement("div")
+    buttonContainer.classList.add("button-container")
+    menuNavBar.append(buttonContainer)
+
     const buttonOne = document.createElement("button")
     buttonOne.classList.add("button-1")
     buttonOne.textContent = "Menu Amsterdam"
-    menuNavBar.append(buttonOne)
+    buttonContainer.append(buttonOne)
     
     const buttonTwo = document.createElement("button")
     buttonTwo.classList.add("button-2")
     buttonTwo.textContent = "Menu Utrecht"
-    menuNavBar.append(buttonTwo)
+    buttonContainer.append(buttonTwo)
 
     const buttonThree = document.createElement("button")
     buttonThree.classList.add("button-3")
     buttonThree.textContent = "Menu London"
-    menuNavBar.append(buttonThree)
-
-
-
+    buttonContainer.append(buttonThree)
 }

@@ -246,7 +246,14 @@ img {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 4rem;
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    border: 2px solid black;
 }
 
 .button-1, .button-2, .button-3 {
